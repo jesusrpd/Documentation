@@ -1,0 +1,162 @@
+<!DOCTYPE html>  <!--INDICAMOS QUE VAMOS A TRABAJAR CON HTML5-->
+<html lang="en"> <!--DENTRA DE LA ETIQUETA HTML COLOCAREMOS TODO NUESTRO CÓDIGO HTML Y PODEMOS COLOCAR EL ATRIBUTO LANG PARA INDICAR EL LENGUAJE DEL SITIO -->
+<head>  <!-- EN LA ETIQUETA HEAD COLOCAMOS LA CABECEDAR DEL SITIO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!-- title ES UTILIZADO PARA DARLE EL TITULO A LA PESTAÑA DE NUESTRA PÁGINA EN EL NAVEGADOR -->
+</head>
+<body> <!--DENTRO DE LA ETIQUETA body VA TODO EL CONTENIDO DE NUESTRO SITIO -->
+
+    <!-- EN ESTAS ETIQUETAS EXPLICAMOS QUE LA ETIQUETA div ES PADRE DE LA ETIQUETA p Y section,
+    Y LA ETIQUETA p Y section SON HERMANOS E HIJOS DE LA ETIQUETA div -->
+    <div>
+        <p></p>
+        <section></section>
+    </div>
+
+
+
+    <!-- ETIQUETAS PARA CREAR ENCABEZADOS, SOLO PUEDE EXISTIR UN h1 EN CADA PÁGINA WEB 
+    LOS ENCABEZADOS VAN DESDE EL h1 HASTA EL h6-->
+    <h1>titulo 1</h1>
+    <h2>titutlo 2</h2>
+    <h3>titulo 3</h3>
+    <h4>titulo 4</h4>
+    <h5>titulo 5</h5>
+    <h6>titulo 6</h6>
+
+    <!-- ETIQUETA PARA AGREGAR TEXTO -->
+    <p>parrafo</p>
+
+    <!-- LA ETIQUETA a SIRVE PARA LINKS Y CON SU ATRIBUTO href, PUEDE CAMBIAR EL COMPORTAMIENTO DEL LINK,
+    SE PUEDEN ENVIAR A OTROS SITIOS WEB, EMAIL O ENVIAR WHATSAPP CON ESTA ETIQUETA -->
+    <a href="https://github.com/" target="_blank">link</a>
+
+    <!-- TABLAS -->
+    <!-- FORMA DE CREAR TABLAS -->
+    <table border="1">
+        <caption>titutlo de tu tabla</caption>
+        <tr>
+            <colgroup>
+                <th>c1</th>
+                <th>c2</th>
+                <th>c3</th>
+            </colgroup>
+        </tr>
+        <tbody>
+            <tr>
+                <td>encabezado 1</td>
+                <td>encabezado 2</td>
+            </tr>
+            <tr>
+                <td>encabezado 1</td>
+                <td>encabezado 2</td>
+                <td>encabezado 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>encabezado 1</td>
+                <td>encabezado 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- LISTAS ORDENAS Y NO ORDENADAS -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ol>
+    <hr/>
+
+    <!-- PARA CREAR FORMULARIOS SIEMPRE USAMOS LA ETIQUETA FORM, PARA ENGLOBAR TODO NUESTRO FORMULARIO -->
+    <form>
+        <!-- EN LOS FORMS PODEMOS CREAR DIFERENTES INPUTS DE ENTRADA PARA EL USUARIO, DEPENDIENDO DEL ATRIBUTO TYPE, ES EL TIPO DE ENTRADA QUE LE PODEMOS PEDIR AL USUARIO, JUEGA CON EL ATRIBUTO TYPE PARA VER LA VARIEDAD QUE TIENE HTML -->
+        <input type="text" placeholder="nombre">
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime">
+        <input type="email">
+        <input type="file">
+        <input type="number" min="1" max="5">
+        <input type="password">
+        <input type="radio">
+
+         <!-- CON SELECT PODEMOS CREAR UNA LISTA DESPLEGABLE PARA ESCOGER UNA OPCIÓN, USANDO LAS ETIQUEAS select Y option -->
+        <select>
+            <option value="">op1</option>
+            <option value="">op2</option>
+        </select>
+
+        <!-- TEXAREA ES UN RECUADRO GRANDE DONDE PODEMOS AGREGAR TEXTO -->
+        <textarea placeholder="comentario" cols="20" rows="20"></textarea>
+
+        <!-- button ESTA VINCULADO A LA ETIQUEA FORM PARA CUANDO SE LE DE CLICK, LA ETIQUEA FORM REALICE UNA ACCIÓN -->
+        <button>press</button>
+    </form>
+
+    <!-- RUTAS ABSOLUTAS Y RELATIVAS -->
+    <!-- LA RUTA RELATIVA ES LA MEJOR OPCIÓN SIEMPRE PARA USAR -->
+    <img src="/html/img/perro.webp" alt="PERRO" width="" height=""/> <!-- RUTA ABSOLUTA -->
+    <img src="./img/perro.webp" alt="PERRO" width="" height=""/> <!--RUTA RELATIVA -->
+    
+    <hr/> <!-- hr, AGREGA UNA DIVISIÓN HORIZONTAL EN EL SITIO -->
+
+
+    <!-- ETIQUETAS SEMANTICAS -->
+    <!-- LAS ETIQUETAS SEMANTICAS SON USADAS PARA DAR UNA MEJOR ESTRUCTURA Y ORDEN AL SITIO, MÁS NO AFECTAN EN NADA AL MOMENTO DE LA VISUALIZACIÓN -->
+    <div>
+        <p>seccion 1</p>
+    </div>
+    <main>
+        <h1>titulo 1</h1>
+    </main>
+    <section>
+        <h2>seccion 2</h2>
+    </section>
+    <footer>
+        <p>para los pie de pagina</p>
+    </footer>
+    <header>
+        <nav>
+            <p>menu de navegación</p>8
+        </nav>
+        <main>
+
+        </main>
+    </header>
+    
+    <!-- FIGURE PODEDMOS USARLA PARA AGREGAR UNA DESCRIPCIÓN A UNA IMG -->
+    <figure>
+        <img src="./img/perro.webp" alt="PERRO" width="" height=""/>
+        <figcaption>Descripción de la img</figcaption>
+    </figure>
+
+
+    <!-- DENTRO DE ESTA ETIQUETA p, ESTAN VARIAS ETIQUETAS USADAS PARA MODIFICAR EL TEXTO, CADA ETIQUETA MODIFICA UNA PARTE ESPECIFICA DEL TEXTO -->
+    <p>Lorem ipsum dolor sit <strong>amet consectetur</strong> adipisicing elit. Beatae <small>consectetur</small>, eius sint recusandae reiciendis ratione, repellendus <cite>optio assumenda</cite> illo hic, accusantium <mark>pariatur</mark> velit odio nulla nisi culpa! Facere, facilis optio.
+    Nisi, error similique quam <span>sed autem</span> ex officia?<br/> Natus molestiae, consectetur quo quas, non ut temporibus voluptas excepturi reprehenderit aspernatur blanditiis facere deleniti, beatae corrupti molestias qui inventore consequuntur repellendus?</p>
+
+
+    <!-- CON ESTA ETIQUETA PODEMOS AGREGAR VIDEOS QUE TENGAMOS, EN EL ATRIBUTO src COLOCAMOS LA UBICACIÓN DEL VIDEO EN NUESTRO ORDENADOR, LO MISMO FUNCIONA CON LA ETIQUETA DE audio -->
+    <video src="" type="video/ogg">
+        ESTE TEXTO APARECE SI EL RECURSO FALLA AL CARGARSE
+    </video>
+    <audio src="">
+        ESTE TEXTO APARECE SI EL RECURSO FALLA AL CARGARSE
+    </audio>
+
+    <!-- CON IFRAME PODEMOS COLOCAR CONTENIDO DE OTROS SITIOS A NUESTRA PÁGINA WEB, COMO UN VIDEO DE YOUTUBE, MAPS ETC.. -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/n0x7jpD7upQ?si=HF68InJvarbOJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7525.556379477664!2d-99.06303030000001!3d19.42198745000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc647dae797b%3A0xd2e17897701f7b21!2sCuchilla%20Pantitl%C3%A1n%2C%2015610%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1718770536392!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <audio src=""></audio>
+
+    
+</body>
+</html>
