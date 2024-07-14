@@ -104,7 +104,7 @@ a{
 } */
 
 /* FLEXBOX */
-body{
+/* body{
     margin: 0;
 }
 div{
@@ -122,4 +122,222 @@ div{
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
+} */
+
+
+/* NORMA MARGIN 0 */
+/* BOX SIZING */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* div{
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    background: red;
+} */
+
+
+
+/* ESPECIFIDAD MAS CLARA */
+/* .t{
+    color: aqua;
+} */
+
+/* div{
+    color: white;
+} */
+
+
+/* INHERITANCE */
+/* div{
+    font-weight: 800;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.initial{
+    color: initial;
+    font-weight: initial;
+    width: unset;
+} */
+
+
+/* FLEX BOX (WRITING MODE, WRAP, FLEX FLOW, FLEX, ORDER, ALIGN SELF) */
+/* .contenedor{
+    width: 100%;
+    height: 100vh;
+    background: green;
+    display: flex; */
+    /* flex-shrink: 1; */
+    /* flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around; */
+/* }
+
+.item{
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+.item2{
+    order: 1;
+}
+
+
+.item1{
+    order: 3;
+}
+
+.item3{
+    order: 2;
+} */
+
+
+
+/* TEXT ALIGN */
+/* div{
+    margin: 200px;
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+p{
+    text-align: center;
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+} */
+
+/* SEUDOELEMENTOS */
+/* p::first-letter{
+    color: red;
+    font-size: 20px;
+}
+
+p::before{
+    content: "S";
+}
+
+p::after{
+    content: "P";
+}
+
+p::first-line{
+    color: green;
+}
+
+p::selection{
+    color: red;
+    background: blue;
+}
+
+input::placeholder{
+    color: red;
+}
+
+ul::marker{
+    color: red;
+} */
+
+
+
+/* SEUDOCLASES */
+/* p:hover{
+ background: blue;   
+} */
+
+/* a:active{
+   background: red; 
+}
+
+button:focus{
+    background: blue;
+    outline: 2px dashed red;
+    outline-offset: 5px;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* #titulo2:target{
+    background: red;
+    PENDIENTE
+}  */
+
+/* a:visited{
+    color: red;
+}
+
+input:disabled{
+    background: blue;
+}
+input:enabled{
+    background: red;
+}
+
+[type="checkbox"]:checked{
+    box-shadow: 0px 0px 5px 5px green;
+}
+
+p:first-child{
+    background: green;
+}
+
+p:last-child{
+    background: orange;
+}
+
+li:nth-child(even){
+    background: yellow;
+}
+img:not([alt]){
+    background: red;
+}
+input:not([id]){
+    background: purple;
+} */
+
+
+
+
+/* BORDER */
+div{
+    /* border: 2px dotted green; */
+    /* border: 2px dashed green; */
+    /* border: 2px solid green;
+    border: 2px double green; */
+    /* border: 2px groove green; */
+    /* border: 2px ridge green; */
+    /* border: 2px inset green; */
+    /* border: 2px outset green;
+    border-top: 5px dotted red; */
+    /* border: 5px solid red;
+    border-radius: 10px 20px 20px;
+    border-bottom: ;
+    border-top-left-radius: ; */
+    /* border-image-source: url("url_img"); */
+}
+
+
+/* SOMBRAS */
+div{
+    border: 3px solid red;
+    margin: 20px;
+    box-shadow: 4px 5px 5px rgb(157, 32, 32);
+    text-shadow: 4px 1px 1px black;
+}
+
+img{
+    /* box-shadow: 5px 5px 5px black; */
+    filter: drop-shadow(1px 1px 8px rgba(255, 0, 0, 0.338));
 }
