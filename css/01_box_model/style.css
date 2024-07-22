@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* RECUERDA LA PROPIEDAD BOX-SIZING QUE ES FUNDAMENTAL PARA EL MODELO DE CAJA */
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+/* BOX MODEL */
+/* NO OLVIDEMOS QUE PARA EL PADDING, MARGIN Y BORDER TENEMOS DIFERENTES PROPIEDADES CON LAS QUE PODEMOS MODIFICAR SUS DIMENCIONES. */
+div{
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    /* margin: 10px 20px;
+    margin: 10px 15px 40px;
+    margin: 10px 5px 15px 20px; */
+    padding: 20px;
+    /* padding: 10px 20px;
+    padding: 10px 15px 40px;
+    padding: 10PX 5PX 15PX 20PX; */
+    border: 4px solid black;
+    /* border-bottom: 3px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 3px solid black; */
+    /* border-width: 5px;
+    border-color: black;
+    border-style: solid; */
+
+}

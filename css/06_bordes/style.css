@@ -1,0 +1,65 @@
+div{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    padding: 20px;
+    background: red;
+}
+
+.dashed{
+    border: 5px dashed black;
+}
+
+.solid{
+    border: 5px solid black;
+}
+
+.double{
+    border: 5px double black;
+}
+
+.groove{
+    border: 5px groove black;
+}
+
+.ridge{
+    border: 5px ridge black;
+}
+
+.inset{
+    border: 5px inset black;
+}
+
+.outset{
+    border: 5px outset black;
+}
+
+/* TAMBIEN TENEMOS LA PROPIEDAD BORDER-WIDTH QUE PUEDE DAR UN ESPESOR AL BORDER DEPENDIENDO SU VALOR */
+
+
+/* PODEMOS DAR UN REDONDEO A LOS BORDER DE NUESTROS ELEMENTOS YA SEA ESPECIFICANDO UN RADIUS GENERAL O UN RADIUS POR LADO */
+.radius1{
+    border-radius: 20px;
+}
+
+.radius2{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.radius3{
+    border-start-start-radius: 20px;
+}
+
+.radius4{
+    border-end-end-radius: 20px;
+}
+
+/* SE PUEDE UTILIZAR IMG COMO BORDES CON LA SIGUIENTE CONFIGURACIÓN */
+.border-img{
+    border-image-source: url(https://assets.codepen.io/174183/border-image-frame.jpg);
+    border-image-slice: 61 58 51 48;  
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+}

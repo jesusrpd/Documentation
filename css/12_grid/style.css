@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GRID SE ENFOCA EN CREAR UN SISTEMA DE REJILLAS, CON DISPLAY GRID DAMOS INDICACIÓN A QUE TODOS LOS ELEMENTOS HIJOS INMEDIATOS APLICARAN ESTA REJILLA GRID.
+CON LA PROPIEDAD GRID-TEMPLATE-COLUMS ESTABLECEMOS EL ANCHO DE CADA COLUMNA, POR CADA PARAMETRO PASADO ES 1 COLUMNA. LO MISMO FUNCIONA CON LA PROPIEDAD GRID-TEMPLATE-ROWS PERO APLICA PARA LAS FILAS. Y GAP ES EL ESPACIADO QUE TENDRA CADA ELEMENTO */
+.container{
+    display: grid;
+    grid-template-columns: 5em 100px 30%;
+    grid-template-rows: 200px auto;
+    gap: 10px;
+}
+
+.item{
+    background: red;
+}
+
+
+/* LA UNIDAD fr ES UNA UNIDAD QUE DISTRIBUYE EL ESPACIO UNA VEZ DISPUESTOS LOS ELEMENTOS, SE DISTRIBUYEN DE FORMA PROPORCIONAL */
+.container-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 100px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.item-2{
+    background: green;
+}
+
+
+/* CON REPEAT PODEMOS REPETIR LA MISMA INSTRUCCIÓN PARA AHORRARNOS CÓDIGO */
+.container-3{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: 100px;
+    gap: 20px;
+}
+
+.item-3{
+    background: orange;
+}
+
+/* CON AUTO-FILL PODEMOS CREAR TANTAS BANDAS QUE NOSOSTROS QUERAMOS Y SE IRÁ ADAPTANDO AL TAMAÑO DEL CONTENEDOR */
+.container-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: 100px auto;
+    gap: 10px;
+}
+
+.item-4{
+    background: purple;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seudoclases</title>
+</head>
+<body>
+    <h2>:hover</h2>
+    <button>button</button>
+    <hr>
+
+    <h2>:active</h2>
+    <a href="#">active</a>
+    <hr>
+
+    <h2>:focus</h2>
+    <button class="btn-focus">div con focus, presiona la tecla tab hasta enfocar este elemento.</button>
+    <hr>
+
+    <h2>:target</h2>
+    <a href="#content">button target</a>
+    <p id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magni fugit pariatur aliquam sapiente expedita dolore dicta qui illum at enim repellat nihil accusamus, suscipit similique consequatur cum saepe inventore.
+    Consectetur eligendi hic fuga nam mollitia autem aut voluptatem, odit veniam pariatur delectus accusamus et minima vitae adipisci laborum! Doloremque, repellat. Cumque natus placeat consequuntur ea tempore enim, consequatur eveniet.</p>
+    <hr>
+
+    <h2>:visited</h2>
+    <a href="" class="visited">link visitado</a>
+    <hr>
+
+    <h2>:disabled y :enabled</h2>
+    <input type="text" placeholder="disabled" disabled>
+    <input type="text" placeholder="enabled" enabled>
+    <hr>
+
+    <h2>:checked</h2>
+    <input type="checkbox" name="">
+    <hr>
+
+    <h2>:placeholder</h2>
+    <input type="number" min="0" max="10" class="input-txt">
+    <hr>
+
+    <h2>:first-child y :last-child</h2>
+    <div class="content">
+        <p>primerl hijo</p>
+        <p>segundo hjo</p>
+        <p>tercer hijo</p>
+    </div>
+    <hr>
+
+    <h2>:nth-child</h2>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <hr>
+
+    <h2>:first-of-type y :last-of-type</h2>
+    <div class="my-parent">
+        <p>parrafo</p>
+        <div>primer div</div>
+        <div>segundo div</div>
+    </div>   
+    <hr>
+    
+    <h2>:is</h2>
+    <div class="padre">
+        <p>parrafo</p>
+        <ul>
+            <li>item 1</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2>:not</h2>
+    <a href="" class="link">link 1</a>
+    <a href="" class="link">link 2</a>
+</body>
+</html>

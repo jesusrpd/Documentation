@@ -1,0 +1,75 @@
+
+h1{
+    text-align: center;
+}
+
+/* LOS SELECTORES SON EL MEDIO EN EL QUE VAMOS A PODER ESPECIFICAR QUE ETIQUETAS O ELEMETNOS DEL SITIO WEB QUEREMOS MODIFICAR.PARA ESTO HAY DIFERENTES TIPOS DE SELECTORES */
+
+
+/* SELECTOR UNIVERSAL, SELECCIONA A TODOS LOS ELEMENTOS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SELECTORES DE TIPO:
+CONSISTE EN ESPECIFICAR LA ETIQUETA HTML A MODIFICAR
+*/
+div{
+    width: 70px;
+    height: 70px;
+    background: red;
+    margin: 10px;
+}
+
+
+/* SELECTOR DE CLASE
+SE MODIFICAN TODOS LOS ELEMENTOS QUE TENGAN LA MISMA CLASE, LAS ETIQUETAS HTML PUEDEN TENER EL MISMO NOMBRE DE CLASE*/
+.main{
+    background: greenyellow;
+}
+
+/* SELECTOR ID
+SE MODIFICA EL ELEMENTO QUE TENGA EL ID INDICADO, SOLO SE PUEDE UTILIZAR UN NOMBRE DE ID POR ETIQUETA */
+#elemento1{
+  background: yellow;  
+}
+
+#elemento2{
+    background: purple;
+}
+
+/* SELECTOR DE ATRIBUTOS
+SE PUEDE MODIFICAR LAS ETIQUETAS CON CIERTOS ATRIBUTOS QUE TENGAN DE LA SIGUIENTE FORMA */
+[type="text"]{
+    background: red;
+}
+
+/* Un href que contiene "example.com" */
+[href*='example.com'] {
+    color: red;
+}
+  
+/* Un href que comienza con https */
+[href^='https'] {
+    color: green;
+}
+  
+/* Un href que termina con .com */
+[href$='.com'] {
+    color: blue;
+}
+
+/* LOS SELECTORES SE PUEDEN UTILIZAR PARA REALIZAR SELECCIONES MÁS COMPLEJAS O EN GRUPOS COMO POR EJEMPLO: */
+
+
+/* LOS PARRAFOS QUE ESTEN DENTRO DE UN div */
+div p{
+    background: pink;
+}
+
+/* SELECCIONAR VARIAS ETIQUETAS O SELECTORES */
+h3, .class{
+    background: grey;
+}

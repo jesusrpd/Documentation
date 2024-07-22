@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+div{
+    width: 200px;
+    height: 100px;
+    background: blue;
+    animation: crecer 1000ms ease-in-out infinite;
+}
+
+@keyframes crecer {
+    0%{
+        width: 200px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 200px;
+    }
+}

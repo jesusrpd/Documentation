@@ -1,0 +1,31 @@
+.first::first-letter{
+    color: blue;
+    font-size: 40px;
+}
+
+
+.second::after{
+    content: "P";
+    color: red;
+    font-size: 40px;
+}
+
+.second::before{
+    content: "A";
+    font-size: 40px;
+    color: blueviolet;
+}
+
+
+.third::first-line{
+    color: red;
+}
+
+.four::selection{
+    background: green;
+    color: white;
+}
+
+.five::placeholder{
+    color: red;
+}

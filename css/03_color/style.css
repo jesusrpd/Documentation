@@ -1,0 +1,23 @@
+/* PODEMOS UTILIZAR LOS COLORES POR DIFERENTES FORMAS */
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.name{
+    background: red
+}
+
+.rgb{
+    background: rgb(10, 207, 10);
+}
+
+.hex{
+    background: #ffff00;
+}
+
+.hsl{
+    background: hsl(300, 100%, 25%);
+}

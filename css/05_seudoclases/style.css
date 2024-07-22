@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+/* LAS SEUDOCLASES NOS AYUDAN A AGREGAR ESTILOS MÁS ESPECIFICOS Y CONCRETOS Y EN CAMBIOS DE ESTADO */
+
+
+/* HOVER SE ACTIVA CUANDO PASAMOS SOBRE EL CURSOR UN ELEMENTO */
+button:hover{
+    background: red;
+}
+
+/* SE ACTIVA CUANDO LE DAMOS CLICK AL BOTON */
+a:active{
+    background: green;
+}
+
+/* SE ACTIVA CUANDO ENFOCAMOS UN ELEMENTO */
+.btn-focus:focus{
+    border: 2px solid black;
+    background: blue;
+}
+
+/* SE ACTIVA CUANDO SE DA CLICK AL BOTON Y EL TARGET APUNTA AL ELEMENTO */
+#content:target{
+    background: yellow;
+}
+
+/* SE ACTIVA CUANDO YA HEMOS VISITADO EL LINK */
+.visited:visited{
+    background: red;
+}
+
+/* :disabled y :enabled SON OCUPADOS MÁS EN LOS INPUTS PARA HABILITAR O DESABILITAR SU USO */
+[disabled]:disabled{
+    background: grey;
+    color: white;
+}
+
+[enabled]:enabled{
+    background: green;
+    color: white;
+}
+
+/* :checked SE ACTIVA CUANDO DAMOS CHECK A UNA CASILLA */
+[type="checkbox"]:checked{
+    box-shadow: 5px 5px 5px black;
+}
+
+/* :valid :invalid :in-range SE ACTIVAN YA SEA CUANDO EN EL INPUT SE TENGA UN DATO VALIDO, NO VALIDO O FUERA DE RANGO RESPECTIVAMENTE */
+.input-txt:valid{
+    background: green;
+}
+
+/* :first-child y :last-child SELECCIONAN EL PRIMER Y ÚLTIMO HIJO DE UNA ETIQUETA RESPECTIVAMENTE */
+.content p:first-child{
+    color: red;
+}
+
+.content p:last-child{
+    color: green;
+}
+
+
+/* :nth-child SELECCIONA UN CIERTO PATRON DE ELEMENTOS HIJOS */
+
+li:nth-child(2){
+    background: yellow;
+}
+
+
+/* :first-of-type SELECCIONA EL PRIMER TIPO DE ETIQUETA ESCOGIDO Y :last-of-type SELECCIONA EL ÚLTIMO TIPO DE ETIQUETA SELECCIONADO */
+
+.my-parent div:first-of-type{
+    color: red;
+}
+
+/* :is ES USADO PARA ESCRIBIR UN CSS MÁS COMPACTO, PODEMOS USARLO PARA BUSCAR CIERTOS ELEMENTOS QUE ESTEN DENTRO DE UNA ETIQUETA PADRE */
+
+.padre :is(p, li){
+    background: red;
+}
+
+/* :not ES USADO PARA EXCLUIR CIERTOS ELEMENTOS, POR EJEMPLO PODEMOS USARLO PARA LOS LINKS QUE NO TENGAN EL ATRIBUTO TARGET */
+.link:not([target]){
+    color: green;
+}
