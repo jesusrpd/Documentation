@@ -5,11 +5,36 @@
 }
 
 
-div{
+.animation{
     width: 200px;
     height: 100px;
     background: blue;
     animation: crecer 1000ms ease-in-out infinite;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out; /*ease; linear; ease-in; ease-out;*/
+    animation-iteration-count: 20;
+    animation-direction: reverse;
+    animation-delay: 5s;
+}
+
+
+.step{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    animation: crecer 1000ms ease-in-out infinite;
+    animation-timing-function: steps(3, end);    
+}
+
+.paused{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    animation: crecer 1000ms ease-in-out infinite;
+}
+
+.paused:hover{
+    animation-play-state: paused;
 }
 
 @keyframes crecer {

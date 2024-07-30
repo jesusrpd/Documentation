@@ -27,3 +27,13 @@ div{
     background-size: cover;
     background-attachment: fixed;
 }
+
+.div-border{
+    width: 500px;
+    height: 250px;
+    border: 10px solid rgba(255, 166, 0, 0.432);
+    background-image: url("https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-origin: border-box; */
+}

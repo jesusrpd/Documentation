@@ -1,0 +1,56 @@
+p{
+    font-size: 30px;
+}
+
+.style{
+    font-style: italic;
+}
+
+.weight{
+    font-weight: bold;
+}
+
+.line-height{
+    line-height: 30px;
+}
+
+.letter-spacing{
+    letter-spacing: 1px;
+}
+
+.word-spacing{
+    word-spacing: 5px;   
+}
+
+.text-transform{
+    text-transform: none;
+}
+
+a{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+}
+
+.ident{
+    text-indent: 20px;
+}
+
+.content{
+    width: 400px;
+    border: 2px solid black;
+    max-width: 400px;
+    max-height: 200px;
+    /* overflow: visible; */
+}
+
+.align{
+    text-align: initial;
+    writing-mode: horizontal-tb;
+}
+
+.orientation{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}

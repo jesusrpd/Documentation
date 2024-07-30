@@ -9,3 +9,10 @@
 p{
     display: block;
 }
+
+div{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
