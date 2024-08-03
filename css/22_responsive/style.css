@@ -1,0 +1,44 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+@media (min-width: 600px){
+    .container{
+        background: green;
+    }
+}
+
+
+/* OPERADORES LOGICOS PARA LOS MEDIA QUERIE */
+/* and
+not
+only */
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    .container{
+        background: orange;
+    }
+}
+
+/* CONDICIONES PAR LOS MEDIA QUERIE */
+/* width
+height
+device-width
+device-height
+orientation (portrait/landscape)
+resolution */
+
+
+/* ESTANDAR EN MEDIA QUERIES */
+
+/* 
+/ Móviles en horizontal o tablets en vertical
+@media (min-width: 768px) { }
+ 
+/ Tablets en horizonal y escritorios normales
+@media (min-width: 1024px) { }
+ 
+/ Escritorios muy anchos
+@media (min-width: 1200px) { } 
+*/

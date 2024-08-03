@@ -9,20 +9,30 @@
     height: 100px;
     background: rgba(58, 250, 58, 0.516);
     position: static;
+    /* top: ;
+    bottom: ;
+    right: ;
+    left: ; */
 }
 
 .item-2{
     width: 100px;
     height: 100px;
-    background: rgba(255, 0, 0, 0.564);
+    background: rgba(255, 0, 0, 0.5);
+    z-index: 5;
     position: relative;
+    left: 50px;
+    top: 30px;
 }
 
 .item-3{
     width: 100px;
     height: 100px;
-    background: rgba(0, 106, 255, 0.564);
+    background: rgba(0, 106, 255, 0.5);
+    z-index: 10;
     position: absolute;
+    right: 10px;
+    bottom: 20px;
 }
 
 .item-4{
@@ -30,7 +40,8 @@
     height: 100px;
     background: rgba(255, 0, 238, 0.564);
     position: fixed;
-    top: 350px;
+    right: 20px;
+    bottom: 20px;
 }
 
 .item-5{

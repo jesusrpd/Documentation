@@ -14,13 +14,15 @@ div{
 }
 
 .item-2{
-    width: 400px;
+    width: 700px;
     height: 200px;
+    border: 2px solid black;
     background-image: url("https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg");
+    /* background-image: url("./fondo1.jpg"); */
     background-size: 25%;
     background-repeat: no-repeat;
-    /* background-repeat: repeat-y; */
-    background-position: 70%;
+    background-repeat: repeat-x;
+    background-position: 20%;
 }
 
 .attachment{
@@ -35,5 +37,5 @@ div{
     background-image: url("https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-origin: border-box; */
+    background-origin: border-box;
 }

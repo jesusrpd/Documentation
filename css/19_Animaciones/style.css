@@ -10,9 +10,10 @@
     height: 100px;
     background: blue;
     animation: crecer 1000ms ease-in-out infinite;
+    animation-name: crecer;
     animation-duration: 1000ms;
     animation-timing-function: ease-in-out; /*ease; linear; ease-in; ease-out;*/
-    animation-iteration-count: 20;
+    animation-iteration-count: 2;
     animation-direction: reverse;
     animation-delay: 5s;
 }
@@ -23,7 +24,7 @@
     height: 100px;
     background-color: blue;
     animation: crecer 1000ms ease-in-out infinite;
-    animation-timing-function: steps(3, end);    
+    animation-timing-function: ease-in-out;  
 }
 
 .paused{
@@ -37,6 +38,16 @@
     animation-play-state: paused;
 }
 
+.loading{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    border-bottom: 4px solid orange;
+    border-top: 4px solid orange;
+    animation: load 1000ms ease-in-out infinite;
+}
+
 @keyframes crecer {
     0%{
         width: 200px;
@@ -46,5 +57,17 @@
     }
     100%{
         width: 200px;
+    }
+}
+
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

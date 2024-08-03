@@ -1,5 +1,7 @@
+
 p{
     font-size: 30px;
+    font-family: "Raleway", sans-serif;
 }
 
 .style{
@@ -7,50 +9,60 @@ p{
 }
 
 .weight{
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .line-height{
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .letter-spacing{
-    letter-spacing: 1px;
+    letter-spacing: 4px;
 }
 
 .word-spacing{
-    word-spacing: 5px;   
+    word-spacing: 30px;   
 }
 
 .text-transform{
-    text-transform: none;
+    text-transform: lowercase;
+    /* uppercase */
+    /* capitalize */
 }
 
 a{
     text-decoration: underline;
     text-decoration-color: red;
-    text-decoration-style: double;
-    text-decoration-thickness: 2px;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
 }
 
 .ident{
-    text-indent: 20px;
+    text-indent: 40px;
 }
 
 .content{
     width: 400px;
     border: 2px solid black;
-    max-width: 400px;
     max-height: 200px;
-    /* overflow: visible; */
+    overflow: hidden;
 }
 
 .align{
-    text-align: initial;
-    writing-mode: horizontal-tb;
+    text-align: justify;
+    writing-mode: vertical-lr;
 }
 
 .orientation{
     writing-mode: vertical-rl;
     text-orientation: upright;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("./static/Raleway-Medium.ttf");
+}
+
+.elemento{
+    font-family: Raleway;
 }

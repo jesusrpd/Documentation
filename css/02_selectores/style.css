@@ -73,3 +73,13 @@ div p{
 h3, .class{
     background: grey;
 }
+
+/* SELECCIONA EL ELEMENTO HIJO DIRECTO */
+p > span{
+    color: red;
+}
+
+/* SELECCIONA 2 ELEMENTOS HERMANOS */
+h4 + h5{
+    color: orange;
+}

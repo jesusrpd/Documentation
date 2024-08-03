@@ -8,8 +8,8 @@ CON LA PROPIEDAD GRID-TEMPLATE-COLUMS ESTABLECEMOS EL ANCHO DE CADA COLUMNA, POR
 .container{
     display: grid;
     grid-template-columns: 5em 100px 30%;
-    grid-template-rows: 200px auto;
-    gap: 10px;
+    grid-template-rows: 100px auto;
+    gap: 5px;
 }
 
 .item{
@@ -20,7 +20,7 @@ CON LA PROPIEDAD GRID-TEMPLATE-COLUMS ESTABLECEMOS EL ANCHO DE CADA COLUMNA, POR
 /* LA UNIDAD fr ES UNA UNIDAD QUE DISTRIBUYE EL ESPACIO UNA VEZ DISPUESTOS LOS ELEMENTOS, SE DISTRIBUYEN DE FORMA PROPORCIONAL */
 .container-2{
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 2fr 4fr;
     grid-template-rows: 100px auto;
     gap: 20px;
     padding: 0 20px;
@@ -47,10 +47,33 @@ CON LA PROPIEDAD GRID-TEMPLATE-COLUMS ESTABLECEMOS EL ANCHO DE CADA COLUMNA, POR
 .container-4{
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
-    grid-template-rows: 100px auto;
+    grid-template-rows: 100px 100px;
     gap: 10px;
 }
 
 .item-4{
     background: purple;
+}
+
+.item-5{
+    background: rgb(0, 0, 0);
+}
+
+.container-5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-rows: 100px auto;
+    gap: 20px;
+}
+
+.item-6{
+    background: blue;
+}
+
+.container-6{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-auto-flow: column;
 }
