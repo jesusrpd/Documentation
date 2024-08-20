@@ -71,3 +71,19 @@
         transform: rotate(360deg);
     }
 }
+
+button{
+    background: purple;
+    border: 2px solid purple;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    transition: all .5s ease-in-out;
+    width: fit-content;
+}
+
+button:hover{
+    background: transparent;
+    color: purple;
+    transition: all .5s ease-in-out;
+}

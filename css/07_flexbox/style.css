@@ -46,7 +46,7 @@
 }
 
 .content span:nth-child(1){
-    flex: 2;
+    flex: 1;
 }
 
 
@@ -64,6 +64,10 @@
 }
 
 .content p:nth-child(2){
+    order: 1;
+}
+
+.content p:nth-child(3){
     order: 3;
 }
 
@@ -77,11 +81,11 @@
     flex-start
     flex-end */
     padding: 0;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     /* strech valor solo funciona con align content   */
     align-content: stretch;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .justify div{
@@ -94,5 +98,9 @@
 }
 
 .self div:nth-child(2){
+    align-self: center;
+}
+
+.self div:nth-child(3){
     align-self: flex-end;
 }

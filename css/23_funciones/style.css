@@ -1,5 +1,5 @@
 :root{
-    --base-color: green;
+    --base-color: rgb(128, 0, 0);
     --shadow: 5px 5px 10px black;
     --height-p: 50px;
 }
@@ -29,28 +29,27 @@ div{
     height: 50px;
     background: orange;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    clip-path: circle(50%);
 }
 
 .transform{
     width: 50px;
     height: 50px;
     background: purple;
-    transform: rotateY(80deg);
-    transform: rotateX(80deg);
-    transform: rotateZ(80deg);
-    transform: rotate(80deg);
-    transform: rotate3d(1, 1, 1, 20deg);
-    transform: scalex(2);
-    transform: scaleY(2);
-    transform: scaleZ(2);
-    transform: scale3d(2, 2, 2);
-    transform: translateX(20px);
-    transform: translateY(20px);
-    transform: translateZ(20px);
-    transform: translate3D(20px, 10px, 5px);
-    transform: skew(5deg);
-    transform: skewX(10deg);
+    /* transform: rotateY(80deg);s */
+    /* transform: rotateX(80deg); */
+    /* transform: rotateZ(70deg); */
+    /* transform: rotate(80deg); */
+    /* transform: rotate3d(1, 1, 1, 20deg); */
+    /* transform: scalex(2); */
+    /* transform: scaleY(2); */
+    /* transform: scaleZ(2); */
+    /* transform: scale3d(2, 2, 2); */
+    /* transform: translateX(20px); */
+    /* transform: translateY(20px); */
+    /* transform: translateZ(20px); */
+    /* transform: translate3D(20px, 10px, 5px); */
+    /* transform: skew(5deg); */
+    /* transform: skewX(10deg); */
     transform: skewY(20deg);
-    perspective: 50px;
+    /* perspective: 50px; */
 }
